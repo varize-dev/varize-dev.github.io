@@ -43,7 +43,7 @@
     
     <title>
         
-            about | 
+            Archives | 
         
         Varize
     </title>
@@ -215,7 +215,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="Varize">
-    <meta name="msapplication-starturl" content="http://varize.github.io/about/">
+    <meta name="msapplication-starturl" content="http://varize.github.io/archives/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="Varize">
@@ -230,9 +230,9 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="http://varize.github.io/about/">
+    <meta property="og:url" content="http://varize.github.io/archives/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="about | Varize">
+    <meta property="og:title" content="Archives | Varize">
     <meta property="og:image" content="/img/favicon.png">
     <meta property="og:description" content>
     
@@ -244,7 +244,7 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://varize.github.io/about/index.html">
+        <link rel="canonical" href="http://varize.github.io/archives/index.html">
     
 
     <!-- Structured-data for SEO -->
@@ -284,203 +284,94 @@
                         </button>
                     
 
-                    <!-- Post TOC -->
+                    <!-- Index Module -->
+<div class="material-index mdl-grid">
+    
+    <div class="locate-thumbnail-symbol"></div>
 
+    <!-- Pin on top -->
+    
 
-<!-- Layouts -->
-
-    <!-- Post Module -->
-    <div class="material-post_container">
-
-        <div class="material-post mdl-grid">
-            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
-
-                <!-- Post Header(Thumbnail & Title) -->
-                
-    <!-- Paradox Post Header -->
+    <!-- Normal Post -->
+    
+        
+            
+                <!-- Paradox Thumbnail -->
+                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
+    <!-- Post Thumbnail -->
     
         
             <!-- Random Thumbnail -->
             <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-            <script type="text/ls-javascript" id="post-thumbnail-script">
-    var randomNum = Math.floor(Math.random() * 19 + 1);
+        
+    
 
-    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+        <!-- Post Title -->
+        <p class="article-headline-p"><a href="/2019/09/22/Introduction/">Introduction</a></p>
+    </div>
+
+    <!-- Post Excerpt -->
+    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
+        
+            About us
+
+        
+        &nbsp;&nbsp;&nbsp;
+        <span>
+            <a href="/2019/09/22/Introduction/" target="_self">Read more</a>
+        </span>
+    </div>
+    <!-- Post_entry Info-->
+    <div id="post_entry-info">
+        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
+            <!-- Author Avatar -->
+            <div id="author-avatar">
+                <img src="/img/avatar.png" width="44px" height="44px" alt="Varize Develop Team's avatar">
+            </div>
+            <div>
+                <strong>Varize Develop Team</strong>
+                <span>Sep 22, 2019</span>
+            </div>
+        </div>
+        <div id="post_entry-right-info">
+          
+
+            
+
+            
+
+            <!-- Post Views -->
+            <span class="post_entry-views">
+            </span>
+        </div>
+    </div>
+</div>
+
+            
+            
+        
+    
+
+    
+
+    
+        <script type="text/ls-javascript" id="thumbnail-script">
+    var randomNum;
+
+    var locatePost = $('.locate-thumbnail-symbol').next();
+    for(var i = 0; i < 10; i++) {
+        randomNum = Math.floor(Math.random() * 19 + 1);
+
+        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
+        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
     $('.post_thumbnail-random').addClass('lazy');
+
+        locatePost = locatePost.next();
+    }
 </script>
 
-        
-    
-            <p class="article-headline-p">
-                about
-            </p>
-        </div>
-
-
-
-
-
-                
-                    <!-- Paradox Post Info -->
-                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
-
-    <!-- Author Avatar -->
-    <div id="author-avatar">
-        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
-    </div>
-    <!-- Author Name & Date -->
-    <div>
-        <strong>Varize Develop Team</strong>
-        <span>Sep 22, 2019</span>
-    </div>
-
-    <div class="section-spacer"></div>
-
-    <!-- Favorite -->
-    <!--
-        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
-            <i class="material-icons" role="presentation">favorite</i>
-            <span class="visuallyhidden">favorites</span>
-        </button>
-    -->
-
-    <!-- Qrcode -->
-    
-        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-    <i class="material-icons" role="presentation">devices other</i>
-    <span class="visuallyhidden">devices other</span>
-</button>
-<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
-    <li class="mdl-menu__item">Read this article on other devices</li>
-    
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAAB4UlEQVR42u3ay3LCMAwFUP7/p9ttZ1qCruwSEh2vGMgYHxbCejy+brEeGBgYGBgYGBgfw3iU18/n/9j015OV/XtnwMDAmMl4EdqeMI6PfrzPyhkwMDAmM+pBtheaK+xgNwwMDIzDIHt8NaywMTAwMN4TcHddBDEwMDD2JrH14trxJfLkXBwDA+OCjF5jYO/r0/obGBgYH8+IRxzCI1aS2BNmRjAwMC7FOG5J1r++vs9KWouBgTGZ0WsP9ApzaYobJ7EYGBg3ZaRFtPQqmRbmSmEaAwNjGCMdS+1dInuYDf8bGBgYN2Kkh+u1E+rFuxdpMwYGxjBGeqWrBOJeohucBAMDYwyjfqD06HvLeRgYGJMZ6cBE5cljwEpzFAMDYyajFzTr6eiGoQoMDAyMVsraG7Ook+IWJgYGxq0ZaYK6q8TWG9HAwMCYyUhDZB2QNkfjhgEGBsYwxkpxLYWlPwEGBgZGuuJUs/X+UicWAwPjdozele7/Utxg+BUDA2MYox5kVw7Ra3M+DfQYGBgjGWlZv176r7RC04QWAwMDI70O1tPRynhHaZgDAwMDo3z5C8Yjyp9iYGBgrCSx9fGLXoPzTeU2DAyMCzLWGwMrTcpmAQ4DA2MM47oLAwMDAwMDA+PU9Q0DFhbbYEbtUQAAAABJRU5ErkJggg==">
-    
-</ul>
-
-    
-
-    <!-- Tags (bookmark) -->
-    
-
-    <!-- Share -->
-    
-        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-    <i class="material-icons" role="presentation">share</i>
-    <span class="visuallyhidden">share</span>
-</button>
-<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
-    
-
-    
-
-    <!-- Share Weibo -->
-    
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=about&url=http://varize.github.io/about/index.html&pic=http://varize.github.io/img/favicon.png&searchPic=false&style=simple" target="_blank">
-            <li class="mdl-menu__item">
-                Share to Weibo
-            </li>
-        </a>
-    
-
-    <!-- Share Twitter -->
-    
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=about&url=http://varize.github.io/about/index.html&via=Varize Develop Team" target="_blank">
-            <li class="mdl-menu__item">
-                Share to Twitter
-            </li>
-        </a>
-    
-
-    <!-- Share Facebook -->
-    
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://varize.github.io/about/index.html" target="_blank">
-            <li class="mdl-menu__item">
-                Share to Facebook
-            </li>
-        </a>
-    
-
-    <!-- Share Google+ -->
-    
-
-    <!-- Share LinkedIn -->
-    
-        <a class="post_share-link" href="https://www.linkedin.com/shareArticle?mini=true&url=http://varize.github.io/about/index.html&title=about" target="_blank">
-            <li class="mdl-menu__item">
-                Share to LinkedIn
-            </li>
-        </a>
-    
-
-    <!-- Share QQ -->
-    
-        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Varize&title=about&summary=&pics=http://varize.github.io/img/favicon.png&url=http://varize.github.io/about/index.html" target="_blank">
-            <li class="mdl-menu__item">
-                Share to QQ
-            </li>
-        </a>
-    
-
-    <!-- Share Telegram -->
-    
-        <a class="post_share-link" href="https://telegram.me/share/url?url=http://varize.github.io/about/index.html&text=about" target="_blank">
-            <li class="mdl-menu__item">
-                Share to Telegram
-            </li>
-        </a>
-    
-</ul>
-
     
 </div>
-
-                
-
-                <!-- Post Content -->
-                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
-    
-        <p><code>Varize</code> is an easy learning language. Our goal is to give you a comfortable programming experience. “The simpler the better” is what we want.</p>
-
-        
-                <blockquote style="margin: 2em 0 0;padding: 0.5em 1em;border-left: 3px solid #F44336;background-color: #F5F5F5;list-style: none;">
-                    <p><strong>
-                         
-                            We give up all the copyright of the passages. Please do not ill use them.
-                        </strong>
-                        <br>
-                        <strong>Link to this article: </strong><a href="http://varize.github.io/about/index.html">http://varize.github.io/about/index.html</a>
-                    </p>
-                </blockquote>
-        
-    
-
-    
-</div>
-
-
-                
-
-                <!-- Post Comments -->
-                
-                    
-                
-            </div>
-
-            <!-- Post Prev & Next Nav -->
-            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
-    <!-- Prev Nav -->
-    
-
-    <!-- Section Spacer -->
-    <div class="section-spacer"></div>
-
-    <!-- Next Nav -->
-    
-</nav>
-
-        </div>
-    </div>
-
 
 
                     
@@ -636,6 +527,14 @@ It will not impact the appearance and can give developers a lot of support :)
 </aside>
 
                     
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
 
                     
 
