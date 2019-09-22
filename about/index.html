@@ -463,6 +463,35 @@
                 <!-- Post Comments -->
                 
                     
+    <!-- 使用 Gitalk -->
+<div id="gitalk-comment">
+    <!-- Gitalk 评论框 -->
+<div id="gitalk-container"></div>
+
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<script>
+    var gitalk = new Gitalk({
+            clientID: 'Iv1.6633f2ed7844d9be',
+            clientSecret: 'c05fd60f60611532f3f22cecc650db03d9866e71',
+            repo: 'blog-comment',
+            owner: 'varize-dev',
+            admin: ['varize-dev'],
+            // facebook-like distraction free mode
+            distractionFreeMode: false
+        })
+   gitalk.render('gitalk-container')
+</script>
+</div>
+<style>
+    #gitalk-comment {
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
                 
             </div>
 
@@ -759,6 +788,8 @@ It will not impact the appearance and can give developers a lot of support :)
 
 
 
+
+   <!-- GitTalk -->
 
 
 
